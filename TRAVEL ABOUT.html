@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel PH</title>
+    <link rel="icon" type="image/png" href="P (1).png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="maincover">
+        <nav>
+            <a href="TRAVEL PH.html"><img src="icon.png" class="icon"></image></a>
+            <ul>
+                <li><a href="https://www.cebupacificair.com/" target="_blank">BOOK</a></li>
+                <li><a href="TRAVEL EXPLORE.html">EXPLORE</a></li>
+                <li><a href="TRAVEL ABOUT.html">ABOUT</a></li>
+                <li><a href="https://www.planetware.com/philippines/top-rated-tourist-attractions-things-to-do-in-the-philippines-phi-1-26.htm" target="_blank">REFERENCE</a></li>
+            </ul>
+        </nav>
+
+    <div class="content">
+      <div class="images">
+        <img src="PHBLANK.png">
+        <img src="PHLUZ.png">
+        <img src="PHVIS.png">
+        <img src="PHMIN.png">
+        <img src="PHPART.png">
+      </div>
+
+      <div class="btm-slides">
+        <span onclick="btm_slide(1)"></span>
+        <span onclick="btm_slide(2)"></span>
+        <span onclick="btm_slide(3)"></span>
+        <span onclick="btm_slide(4)"></span>
+        <span onclick="btm_slide(5)"></span>
+      </div>
+
+      <div class="sliders left" onclick="side_slide(-1)">
+        <span class="fas fa-angle-left"></span>
+      </div>
+
+      <div class="sliders right" onclick="side_slide(1)">
+        <span class="fas fa-angle-right"></span>
+      </div>
+</div>
+
+<script>
+  var indexValue = 1;
+  showImg(indexValue);
+  function btm_slide(e){showImg(indexValue = e);}
+  function side_slide(e){showImg(indexValue += e);}
+  function showImg(e){
+    var i;
+    const img = document.querySelectorAll('img');
+    const slider = document.querySelectorAll('.btm-slides span');
+    if(e > img.length){indexValue = 1}
+    if(e < 1){indexValue = img.length}
+    for(i = 0; i < img.length; i++){
+      img[i].style.display = "none";
+    }
+    for(i = 0; i < slider.length; i++){
+      slider[i].style.background = "rgba(255,255,255,0.1)";
+    }
+    img[indexValue-1].style.display = "block";
+    slider[indexValue-1].style.background = "white";
+  }
+</script>
+
+  </body>
+</html>

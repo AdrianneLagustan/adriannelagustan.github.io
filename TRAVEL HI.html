@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel PH</title>
+    <link rel="icon" type="image/png" href="P (1).png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<STYle>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'poppins', sans-serif;
+    }
+
+    .maincover{
+    background-color: #ffff;
+    background: #fff url(bear.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position:fixed;
+    z-index: 100;
+    background-size: 30%;
+    background-position: right;
+
+}
+.text{
+    color: #1b1a1a;
+    position: absolute;
+    top: 8%;
+    align-self: center;
+}
+
+.text p{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.text h1{
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #111010;
+    background: url(back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 50s linear infinite ;
+}
+@keyframes back{
+    100%{
+        background-position: 3000px 0;
+    }
+}
+</STYle>
+
+<DIC class="maincover">
+    <div class="text">
+    <p>Click the button.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+      let person = prompt("Please enter your name", "TYPE YOUR NAME");
+      if (person != null) {
+        document.getElementById("demo").innerHTML =
+        "Hello " + person + "! How are you today?";
+      }
+    }
+
+    </script>
+    </div>
+    <P>
+<a href="TRAVEL PH.html"><button type="button" oneclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>GO BACK TO HOME!</button></a></P>
+
+
+</body>
+</html>

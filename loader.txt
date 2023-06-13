@@ -1,0 +1,86 @@
+<script>
+            var loader = document.getElementById("pre-loader");
+
+            window.addEventListener("load", function(){
+                setTimeout(function() {
+                    loader.style.display = "none";
+                    document.getElementById('content').style.display = 'block';
+                }, 3000); //PANG TIMER
+        });
+        </script>
+
+
+
+
+
+
+    <script>
+        var loader = document.getElementById("#preloader");
+
+        window.addEventListener("load", function(){
+            setTimeout(function() {
+                loader.style.display = "none";
+                document.getElementById('#preloader').style.display = 'block';
+            }, 2800); //PANG TIMER
+    });
+    </script>
+
+    <script>
+        setTimeout(function() {
+                document.querySelector('#preloader').style.opacity =0;}, 2200);
+    </script>
+-------------------------------------
+        <script>
+        var loader = document.getElementById('#preloaderr');
+
+        window.addEventListener("load", function(){ setTimeout(function() {
+            loader.style.display = "none";
+            document.getElementById('content').style.display = 'block';}, 1000);
+            }); </script>
+
+<script>
+    setTimeout(function(){ document.querySelector('#preloaderr').style.opacity=0;}, 1000);
+</script>
+
+-----------------------------------------------------
+
+
+
+
+
+<script>
+  var loader = document.getElementById("#preloader1");
+
+  window.addEventListener("load", function(){
+      setTimeout(function() {
+          loader.style.display = "none";
+          document.getElementById('#preloader1').style.display = 'block';
+      }, 1800); //PANG TIMER loading
+});
+</script>
+
+<script>
+  setTimeout(function() {
+          document.querySelector('#preloader1').style.opacity =0;}, 1500); //timer fade
+
+</script>
+
+
+
+css-------------------------
+#preloader1{
+    background: #fff url(bear.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position:fixed;
+    z-index: 100;
+    background-size: 30%;
+    background-position: center;
+    
+
+
+    opacity: 1;
+    transition: opacity 2s ease-out;
+
+}
+
